@@ -102,8 +102,8 @@
 <header class="hero">
     <div class="series-label">LLM Hub &mdash; RAG & Retrieval Systems</div>
     <h1>RAG &amp; <span class="accent">Retrieval Systems</span></h1>
-    <p class="subtitle">Embedding models, vector databases, hybrid search and reranking, chunking, agentic RAG, GraphRAG, and what it actually takes to ship retrieval to production.</p>
-    <div class="tags"><span class="tag">Embeddings</span><span class="tag">Vector DB</span><span class="tag">Hybrid Search</span><span class="tag">Rerank</span><span class="tag">GraphRAG</span></div>
+    <p class="subtitle">Embedding models, vector databases, hybrid search and reranking (plus two deep-dive companions on the two-step cascade architecture and the underlying reranker mathematics), chunking, agentic RAG, GraphRAG, and what it actually takes to ship retrieval to production.</p>
+    <div class="tags"><span class="tag">Embeddings</span><span class="tag">Vector DB</span><span class="tag">Hybrid Search</span><span class="tag">Rerank Math</span><span class="tag">Cascade</span><span class="tag">GraphRAG</span></div>
 </header>
 <main class="container">
     <h2>Presentations in This Series</h2>
@@ -115,6 +115,8 @@
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/RAG_05_Agentic_RAG_Patterns/">Agentic RAG Patterns &rarr;</a><div class="desc">HyDE, query decomposition, Self-RAG, Corrective RAG (CRAG), iterative retrieval, query routing, tool-using RAG.</div><div class="meta"><span class="badge live">live</span></div></div></li>
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/RAG_06_GraphRAG_and_KGs/">GraphRAG &amp; Knowledge Graphs &rarr;</a><div class="desc">Microsoft GraphRAG, KG construction, entity resolution; Neo4j, Memgraph, KuzuDB; hybrid graph+vector retrieval; Cypher in agent loops.</div><div class="meta"><span class="badge live">live</span></div></div></li>
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/RAG_07_Production_RAG/">Production RAG &rarr;</a><div class="desc">RAGAS, ARES, Trulens; drift &amp; freshness; latency budgets; multi-tenancy and ACLs; citation &amp; grounding; cost; failure modes.</div><div class="meta"><span class="badge live">live</span></div></div></li>
+<li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/RAG_08_Two_Step_Retrieval_Architecture/">Two-Step Retrieval &mdash; Architecture &amp; Cost-Quality Mathematics &rarr;</a><div class="desc">Companion deep-dive to deck 03. The bi-encoder / cross-encoder asymmetry; the indexability barrier (why MIPS scales and cross-attention doesn&apos;t); ANN math (HNSW, IVF, PQ recall&ndash;latency curves); the recall-ceiling theorem; RRF derivation; latency composition under tails; the (k, quality, latency) Pareto frontier; Platt / isotonic / temperature calibration; worked example at 10&nbsp;M docs / 200&nbsp;ms.</div><div class="meta"><span class="badge live">live</span></div></div></li>
+<li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/RAG_09_Reranker_Mathematics/">Reranker Mathematics &rarr;</a><div class="desc">Stage-2 maths in depth. Cross-encoder attention &amp; token interactions; ColBERT MaxSim formal definition; learning-to-rank families (pointwise / pairwise / listwise); RankNet sigmoid loss and gradient; LambdaRank weighted by <code>|&Delta;NDCG|</code>; LambdaMART GBDT; InfoNCE contrastive loss with hard negatives; MarginMSE cross-encoder &rarr; bi-encoder distillation; DCG / NDCG / MRR / MAP derivations.</div><div class="meta"><span class="badge live">live</span></div></div></li>
     </ol>
     
 </main>
