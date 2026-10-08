@@ -18,6 +18,10 @@ Embedding models, vector databases, hybrid search and reranking (plus two deep-d
 | 08 | [Two-Step Retrieval &mdash; Architecture &amp; Cost-Quality Mathematics](https://brendanjameslynskey.github.io/RAG_08_Two_Step_Retrieval_Architecture/) | live | Companion deep-dive to deck 03. The bi-encoder / cross-encoder asymmetry; indexability barrier (why MIPS scales and cross-attention doesn&apos;t); ANN math (HNSW, IVF, PQ recall&ndash;latency curves); recall-ceiling theorem; RRF derivation, CombSUM, Z-score; latency composition under tails; the (k, quality, latency) Pareto frontier; Platt / isotonic / temperature calibration; worked example at 10&nbsp;M docs / 200&nbsp;ms. |
 | 09 | [Reranker Mathematics](https://brendanjameslynskey.github.io/RAG_09_Reranker_Mathematics/) | live | Stage-2 maths. Cross-encoder attention &amp; the token-interaction story; ColBERT MaxSim formal definition; learning-to-rank families (pointwise / pairwise / listwise); RankNet sigmoid loss and the &ldquo;lambdas&rdquo;; LambdaRank gradient weighted by <code>\|&Delta;NDCG\|</code>; LambdaMART GBDT; InfoNCE contrastive loss with hard negatives; MarginMSE cross-encoder &rarr; bi-encoder distillation; DCG / NDCG / MRR / MAP derivations. |
 
+## Related
+
+**Related site:** [Agent Context Explained](https://agent-context-explained.vercel.app/) ([code](https://github.com/BrendanJamesLynskey/agent-context-explained)), the third agent companion site: context engineering, measured, in 9 chapters, each built around an animation: the context window as working memory, lexical retrieval (BM25), dense retrieval, hybrid fusion and reranking, chunking, packing a token budget, compaction and summarisation, agent memory across sessions, and long context or retrieval. Every number is measured on a fixed, openly licensed corpus (6 SQuAD v1.1 articles and 200 of their questions) by a deterministic simulator; a small embedding model and a cross-encoder ran once, offline, and no live model is called.
+
 ## Where this fits
 
 Part of the [LLMs hub](https://github.com/BrendanJamesLynskey/LLMs) &mdash; an index of presentation series for AI/LLM engineers.
